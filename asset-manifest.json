@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/henhacks/static/css/main.e6c13ad2.css",
+    "main.js": "/henhacks/static/js/main.41d01219.js",
+    "static/js/787.8b42024e.chunk.js": "/henhacks/static/js/787.8b42024e.chunk.js",
+    "index.html": "/henhacks/index.html",
+    "main.e6c13ad2.css.map": "/henhacks/static/css/main.e6c13ad2.css.map",
+    "main.41d01219.js.map": "/henhacks/static/js/main.41d01219.js.map",
+    "787.8b42024e.chunk.js.map": "/henhacks/static/js/787.8b42024e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.41d01219.js"
+  ]
+}
