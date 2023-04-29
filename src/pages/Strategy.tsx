@@ -1,15 +1,17 @@
-import { Center, Heading } from "@chakra-ui/react";
 import React from "react";
-import Sidebar from "../component/sidebar";
+import { Center, Heading } from "@chakra-ui/react";
+import NavBar from "../component/NavBar";
 
-export default function Strategy() {
+export default function Forum() {
     return (
         <>
             <div style={{padding: 10}}>
-                <Center>
+                <Center id="center">
                     <Heading>Strategy</Heading>
                 </Center>
-                <Sidebar children={undefined}></Sidebar>
+                <br></br>
+                <NavBar></NavBar>
+                <p>Hey</p>
             </div>
         </>
     )

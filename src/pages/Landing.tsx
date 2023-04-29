@@ -1,6 +1,6 @@
 import React from "react";
 import { Center, Heading } from "@chakra-ui/react";
-import Sidebar from "../component/sidebar";
+import NavBar from "../component/NavBar";
 
 export default function Landing() {
     return (
@@ -9,7 +9,8 @@ export default function Landing() {
                 <Center>
                     <Heading>Reinvent Your Financial Life</Heading>
                 </Center>
-                <Sidebar children={undefined}></Sidebar>
+                <br></br>
+                <NavBar></NavBar>
             </div>
         </>
     )

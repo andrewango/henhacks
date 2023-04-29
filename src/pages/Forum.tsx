@@ -1,15 +1,16 @@
 import React from "react";
 import { Center, Heading } from "@chakra-ui/react";
-import Sidebar from "../component/sidebar";
+import NavBar from "../component/NavBar";
 
 export default function Forum() {
     return (
         <>
             <div style={{padding: 10}}>
-                <Center>
+                <Center id="center">
                     <Heading>Forum</Heading>
                 </Center>
-                <Sidebar children={undefined}></Sidebar>
+                <br></br>
+                <NavBar></NavBar>
             </div>
         </>
     )
