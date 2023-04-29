@@ -1,6 +1,7 @@
 import React from "react";
 import { Center, Heading } from "@chakra-ui/react";
 import NavBar from "../component/NavBar";
+import GoogleMaps from "../component/GoogleMaps";
 
 export default function Forum() {
     return (
@@ -12,6 +13,9 @@ export default function Forum() {
                 <br></br>
                 <NavBar></NavBar>
                 <p>Hey</p>
+            </div>
+            <div>
+                <GoogleMaps></GoogleMaps>
             </div>
         </>
     )
