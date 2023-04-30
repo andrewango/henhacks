@@ -6,23 +6,38 @@ import NavBar from "../component/NavBar";
 export default function Forum() {
     return (
         <>
-            <div style={{padding: 15}}>
+            <div style={{ padding: 15 }}>
                 <Center id="center">
                     <Heading>Forums</Heading>
                 </Center>
                 <br></br>
                 <NavBar></NavBar>
                 <br></br>
-                <Link to='/QnA'>
-                    <Button colorScheme='blue' fontSize='3xl' variant='link'>Ask Questions Here!</Button>
-                </Link>
+                <Center>
+                    <Link to="/QnA">
+                        <Button
+                            colorScheme="blue"
+                            fontSize="3xl"
+                            variant="link"
+                        >
+                            Ask Questions Here!
+                        </Button>
+                    </Link>
+                </Center>
                 <br></br>
                 <br></br>
-                <Link to='/FAQ'>
-                    <Button colorScheme='blue' fontSize='3xl' variant='link'>Frequently Asked Questions</Button>
-                </Link>
+                <Center>
+                    <Link to="/FAQ">
+                        <Button
+                            colorScheme="blue"
+                            fontSize="3xl"
+                            variant="link"
+                        >
+                            Frequently Asked Questions
+                        </Button>
+                    </Link>
+                </Center>
             </div>
-            
         </>
     );
 }

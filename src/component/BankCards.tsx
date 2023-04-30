@@ -1,5 +1,6 @@
 import React from "react";
 import {
+    Link,
     Card,
     CardBody,
     Heading,
@@ -7,7 +8,8 @@ import {
     Image,
     CardFooter,
     Button,
-    VStack
+    VStack,
+    CardHeader
 } from "@chakra-ui/react";
 import Chase from "../banks/chase.png";
 import Chime from "../banks/chime.png";
@@ -16,7 +18,6 @@ import Axos from "../banks/axos.png";
 import Nationwide from "../banks/nationwide.png";
 import Quontic from "../banks/quontic.png";
 import Penfed from "../banks/penfed.png";
-import { Link } from "react-router-dom";
 
 export default function BankCards() {
     const bankImages = [
@@ -84,27 +85,60 @@ export default function BankCards() {
                 <VStack direction="row" spacing={5} align="stretch">
                     {bankImages.map((bank) => (
                         <Card
+                            key={bank.title}
                             direction={{ base: "column", sm: "row" }}
                             overflow="hidden"
-                            variant="outline"
+                            variant="elevated"
+                            boxShadow="md"
+                            transition="box-shadow 0.2s"
+                            _hover={{ boxShadow: "xl" }}
                         >
-                            <Image
-                                objectFit="cover"
-                                maxW={{ base: "100%", sm: "350px" }}
-                                src={bank.img}
-                                alt={bank.title}
-                            />
+                            <CardHeader>
+                                <Link href={bank.link}>
+                                    <Image
+                                        objectFit="cover"
+                                        maxW={{ base: "100%", sm: "350px" }}
+                                        src={bank.img}
+                                        alt={bank.title}
+                                    />
+                                </Link>
+                            </CardHeader>
                             <CardBody>
                                 <Heading size="md">{bank.title}</Heading>
-
                                 <Text py="2">{bank.line1}</Text>
                                 <Text py="2">{bank.line2}</Text>
                                 <Text py="2">{bank.line3}</Text>
                             </CardBody>
 
                             <CardFooter>
-                                <Link to={bank.link}>
-                                    <Button variant="solid" colorScheme="blue">
+                                <Link href={bank.link}>
+                                    <Button
+                                        as="button"
+                                        id="check-rates-link"
+                                        height="40px"
+                                        lineHeight="2.1"
+                                        transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
+                                        border="2px"
+                                        borderRadius="50px"
+                                        fontSize="20px"
+                                        fontWeight="semibold"
+                                        bg="blue.500"
+                                        borderColor="blue.600"
+                                        color="white"
+                                        _hover={{
+                                            bg: "blue.600",
+                                            color: "white"
+                                        }}
+                                        _active={{
+                                            bg: "blue.300",
+                                            transform: "scale(0.90)",
+                                            borderColor: "blue.200"
+                                        }}
+                                        _focus={{
+                                            boxShadow:
+                                                "0 0 2px 2px rgba(0, 200, 255, .50), 0 1px 1px rgba(0, 0, 0, .15)"
+                                        }}
+                                    >
                                         Learn More
                                     </Button>
                                 </Link>

@@ -3,7 +3,7 @@ import { Center, Heading } from "@chakra-ui/react";
 import NavBar from "../component/NavBar";
 import BankCards from "../component/BankCards";
 
-export function TaxRelief() {
+export default function Banking() {
     return (
         <>
             <div style={{ padding: 15 }}>
@@ -18,5 +18,3 @@ export function TaxRelief() {
         </>
     );
 }
-
-export default TaxRelief;
