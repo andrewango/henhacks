@@ -33,6 +33,24 @@ export default function NavBar() {
                     Personal Loans
                 </Box>
             </Link>
+            <Link to="/Banking">
+                <Box
+                    as="span"
+                    fontSize="lg"
+                    fontWeight="bold"
+                    color="white"
+                    px={4}
+                    py={2}
+                    transition="background-color 0.3s ease"
+                    _hover={{
+                        bgGradient: "linear(to-b, blue.700, blue.900)",
+                        color: "white"
+                    }}
+                    borderRadius="md"
+                >
+                    Banking
+                </Box>
+            </Link>
             <Link to="/Strategy">
                 <Box
                     as="span"
@@ -67,24 +85,6 @@ export default function NavBar() {
                     borderRadius="md"
                 >
                     Forum
-                </Box>
-            </Link>
-            <Link to="/TaxRelief">
-                <Box
-                    as="span"
-                    fontSize="lg"
-                    fontWeight="bold"
-                    color="white"
-                    px={4}
-                    py={2}
-                    transition="background-color 0.3s ease"
-                    _hover={{
-                        bgGradient: "linear(to-b, blue.700, blue.900)",
-                        color: "white"
-                    }}
-                    borderRadius="md"
-                >
-                    Tax Relief
                 </Box>
             </Link>
         </Box>
