@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Image, Heading, Text, Box, Card, CardHeader, CardBody, CardFooter, Stack, Button, Center, VStack, HStack } from "@chakra-ui/react";
+import { Image, Text, Card, CardBody, Stack, Button, Center, VStack, HStack } from "@chakra-ui/react";
 import Slide1 from "../slides/Step 1.png";
 import Slide2 from "../slides/Step 2.png";
 import Slide3 from "../slides/Step 3.png";
