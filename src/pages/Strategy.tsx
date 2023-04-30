@@ -1,6 +1,5 @@
 import React from "react";
 import { Text, Center, HStack, Heading, Box } from "@chakra-ui/react";
-import { Card, CardHeader, CardBody } from "@chakra-ui/react";
 import NavBar from "../component/NavBar";
 import SlideShow from "../component/SlideShow";
 import MapPlace from "../component/MapPlace";
