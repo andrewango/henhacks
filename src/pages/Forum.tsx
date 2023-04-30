@@ -6,9 +6,16 @@ import NavBar from "../component/NavBar";
 export default function Forum() {
     return (
         <>
-            <div style={{ padding: 15 }}>
+            <div
+                style={{
+                    padding: 15,
+                    background: "linear-gradient(to bottom, #00c6fb, #005bea)"
+                }}
+            >
                 <Center id="center">
-                    <Heading>Forums</Heading>
+                    <Heading fontSize="60px" fontFamily="Quantum" color="white">
+                        <i>EnHence</i>
+                    </Heading>
                 </Center>
                 <br></br>
                 <NavBar></NavBar>
@@ -19,6 +26,7 @@ export default function Forum() {
                             colorScheme="blue"
                             fontSize="3xl"
                             variant="link"
+                            color="white"
                         >
                             Ask Questions Here!
                         </Button>
@@ -32,6 +40,7 @@ export default function Forum() {
                             colorScheme="blue"
                             fontSize="3xl"
                             variant="link"
+                            color="white"
                         >
                             Frequently Asked Questions
                         </Button>
