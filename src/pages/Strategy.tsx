@@ -12,10 +12,15 @@ export default function Forum() {
                 </Center>
                 <br></br>
                 <NavBar></NavBar>
+<<<<<<< Updated upstream
                 <p>Hey</p>
             </div>
             <div>
                 <GoogleMaps></GoogleMaps>
+=======
+                <SlideShow></SlideShow>
+                <Map></Map>
+>>>>>>> Stashed changes
             </div>
         </>
     )
