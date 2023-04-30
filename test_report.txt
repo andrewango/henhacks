@@ -292,7 +292,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (352 ms)
+  ✕ renders learn react link (298 ms)
 
   ● renders learn react link
 
@@ -352,5 +352,5 @@ All files               |    7.57 |        0 |    9.67 |    7.57 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.83 s
+Time:        3.11 s
 Ran all test suites.
