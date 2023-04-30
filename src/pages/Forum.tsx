@@ -5,7 +5,7 @@ import NavBar from "../component/NavBar";
 export default function Forum() {
     return (
         <>
-            <div style={{padding: 10}}>
+            <div style={{ padding: 10 }}>
                 <Center id="center">
                     <Heading>Forum</Heading>
                 </Center>
@@ -13,5 +13,5 @@ export default function Forum() {
                 <NavBar></NavBar>
             </div>
         </>
-    )
+    );
 }
