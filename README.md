@@ -31,5 +31,7 @@ In the future, we plan a number of new ideas for EnHence:
 - For the map, we would like to have people read the strategy and have easy access to view banks around them using a Nearby Search feature.
 - We want to implement a Loan Calculator to help people determine monthly payments according to the loan amount, term, and interest rate. We're planning to make continuous slider components and a continuously changing result while adjusting the variables controlled by those sliders.
 
+We would like to implement this into a mobile app instead, possibly using Flutter with Dart.
+
 
 
