@@ -6,7 +6,7 @@ import SlideShow from "../component/SlideShow";
 export default function Strategy() {
     return (
         <>
-            <div style={{padding: 10}}>
+            <div style={{padding: 15}}>
                 <Center id="center">
                     <Heading>Financial Strategy</Heading>
                 </Center>
