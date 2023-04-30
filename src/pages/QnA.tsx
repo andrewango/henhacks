@@ -1,5 +1,5 @@
 import React from "react";
-import { Center, Heading, Text } from "@chakra-ui/react";
+import { Center, Container, Heading, Text } from "@chakra-ui/react";
 import NavBar from "../component/NavBar";
 import Textbox from "../component/Textbox";
 
@@ -20,8 +20,12 @@ export function QnA() {
                 <br></br>
                 <NavBar></NavBar>
                 <br></br>
-                <Text fontSize="3xl">Ask Questions Here!</Text>
-                <Textbox></Textbox>
+                <Container h="100vh" textAlign="center">
+                    <Text fontWeight="bold" fontSize="3xl" color="white">
+                        Discussion Thread
+                    </Text>
+                    <Textbox></Textbox>
+                </Container>
             </div>
         </>
     );

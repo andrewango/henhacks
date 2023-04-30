@@ -1,5 +1,5 @@
 import React from "react";
-import { Center, Heading, Button } from "@chakra-ui/react";
+import { Center, Heading, Button, Container } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import NavBar from "../component/NavBar";
 
@@ -20,32 +20,34 @@ export default function Forum() {
                 <br></br>
                 <NavBar></NavBar>
                 <br></br>
-                <Center>
-                    <Link to="/QnA">
-                        <Button
-                            colorScheme="blue"
-                            fontSize="3xl"
-                            variant="link"
-                            color="white"
-                        >
-                            Ask Questions Here!
-                        </Button>
-                    </Link>
-                </Center>
-                <br></br>
-                <br></br>
-                <Center>
-                    <Link to="/FAQ">
-                        <Button
-                            colorScheme="blue"
-                            fontSize="3xl"
-                            variant="link"
-                            color="white"
-                        >
-                            Frequently Asked Questions
-                        </Button>
-                    </Link>
-                </Center>
+                <Container h="100vh" textAlign="center">
+                    <Center>
+                        <Link to="/QnA">
+                            <Button
+                                colorScheme="blue"
+                                fontSize="3xl"
+                                variant="link"
+                                color="white"
+                            >
+                                Ask Questions Here!
+                            </Button>
+                        </Link>
+                    </Center>
+                    <br></br>
+                    <br></br>
+                    <Center>
+                        <Link to="/FAQ">
+                            <Button
+                                colorScheme="blue"
+                                fontSize="3xl"
+                                variant="link"
+                                color="white"
+                            >
+                                Frequently Asked Questions
+                            </Button>
+                        </Link>
+                    </Center>
+                </Container>
             </div>
         </>
     );

@@ -20,14 +20,14 @@ export default function Strategy() {
                 </Center>
                 <br></br>
                 <NavBar></NavBar>
-                <Center py={8}>
+                <Center py={8} height="25vh">
                     <Text fontSize="20px" fontWeight="semibold" color="white">
                         If you're in a tight situation with a low credit score,
                         here's a potential strategy that may benefit you:
                     </Text>
                 </Center>
-                <Center>
-                    <HStack overflow="hidden">
+                <Center h="55vh">
+                    <HStack overflow="hidden" mt={-60}>
                         <SlideShow></SlideShow>
                         <Box textAlign="center" width="45vw">
                             <Text
