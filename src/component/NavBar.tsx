@@ -30,7 +30,7 @@ export default function NavBar() {
                     }}
                     borderRadius="md"
                 >
-                    Home
+                    Personal Loans
                 </Box>
             </Link>
             <Link to="/Strategy">
