@@ -292,7 +292,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (223 ms)
+  ✕ renders learn react link (231 ms)
 
   ● renders learn react link
 
@@ -348,7 +348,7 @@ All files                   |    5.15 |        0 |    6.38 |    5.15 |
   PersonalLoanCardProps.tsx |       0 |        0 |       0 |       0 |                   
   PersonalLoanCards.tsx     |       0 |      100 |       0 |       0 | 35-134            
   SlideShow.tsx             |       0 |        0 |       0 |       0 | 32-100            
-  Textbox.tsx               |       0 |        0 |       0 |       0 | 11-47             
+  Textbox.tsx               |       0 |        0 |       0 |       0 | 11-61             
  src/pages                  |       0 |      100 |       0 |       0 |                   
   Banking.tsx               |       0 |      100 |       0 |       0 | 7                 
   FAQ.tsx                   |       0 |      100 |       0 |       0 | 6                 
@@ -360,5 +360,5 @@ All files                   |    5.15 |        0 |    6.38 |    5.15 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.655 s
+Time:        4.194 s
 Ran all test suites.
