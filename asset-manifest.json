@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/henhacks/static/css/main.6328bee1.css",
-    "main.js": "/henhacks/static/js/main.09da6333.js",
+    "main.js": "/henhacks/static/js/main.aefd711b.js",
     "static/js/483.d16cccdc.chunk.js": "/henhacks/static/js/483.d16cccdc.chunk.js",
     "static/js/787.8b42024e.chunk.js": "/henhacks/static/js/787.8b42024e.chunk.js",
     "static/media/LightStream.png": "/henhacks/static/media/LightStream.c36e3838d903d367ac45.png",
@@ -24,12 +24,12 @@
     "static/media/BankRate.webp": "/henhacks/static/media/BankRate.680377f423f10a9d72e8.webp",
     "index.html": "/henhacks/index.html",
     "main.6328bee1.css.map": "/henhacks/static/css/main.6328bee1.css.map",
-    "main.09da6333.js.map": "/henhacks/static/js/main.09da6333.js.map",
+    "main.aefd711b.js.map": "/henhacks/static/js/main.aefd711b.js.map",
     "483.d16cccdc.chunk.js.map": "/henhacks/static/js/483.d16cccdc.chunk.js.map",
     "787.8b42024e.chunk.js.map": "/henhacks/static/js/787.8b42024e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6328bee1.css",
-    "static/js/main.09da6333.js"
+    "static/js/main.aefd711b.js"
   ]
 }
