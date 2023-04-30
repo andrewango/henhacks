@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/henhacks/static/css/main.e6c13ad2.css",
-    "main.js": "/henhacks/static/js/main.c0c6e54d.js",
+    "main.css": "/henhacks/static/css/main.6328bee1.css",
+    "main.js": "/henhacks/static/js/main.44afde69.js",
     "static/js/483.d16cccdc.chunk.js": "/henhacks/static/js/483.d16cccdc.chunk.js",
     "static/js/787.8b42024e.chunk.js": "/henhacks/static/js/787.8b42024e.chunk.js",
     "static/media/LightStream.png": "/henhacks/static/media/LightStream.c36e3838d903d367ac45.png",
@@ -13,22 +13,23 @@
     "static/media/LendingTree.jpg": "/henhacks/static/media/LendingTree.8bc00d58e44680e0ddd9.jpg",
     "static/media/aspiration.png": "/henhacks/static/media/aspiration.b9d8a0923839573671ce.png",
     "static/media/Universal Credit.png": "/henhacks/static/media/Universal Credit.34115a948ee4433e5ae5.png",
-    "static/media/BestEgg.jpg": "/henhacks/static/media/BestEgg.aa7b2ee44aa9e2f89ded.jpg",
     "static/media/axos.png": "/henhacks/static/media/axos.f40dd644549ebebedb65.png",
+    "static/media/Quantum.otf": "/henhacks/static/media/Quantum.ab22dee95cbffcc89a87.otf",
     "static/media/Step 9.png": "/henhacks/static/media/Step 9.b08b365235498d13332d.png",
     "static/media/Step 10.png": "/henhacks/static/media/Step 10.928afd4700b4e118703a.png",
     "static/media/Step 8.png": "/henhacks/static/media/Step 8.cf91d10f842e4445de87.png",
     "static/media/Discover.jpeg": "/henhacks/static/media/Discover.73fca15d502667c71235.jpeg",
+    "static/media/BestEgg.jpg": "/henhacks/static/media/BestEgg.db4ce366f70affe520a4.jpg",
     "static/media/Step 12.png": "/henhacks/static/media/Step 12.5599b41ff131e1cc4d77.png",
     "static/media/BankRate.webp": "/henhacks/static/media/BankRate.680377f423f10a9d72e8.webp",
     "index.html": "/henhacks/index.html",
-    "main.e6c13ad2.css.map": "/henhacks/static/css/main.e6c13ad2.css.map",
-    "main.c0c6e54d.js.map": "/henhacks/static/js/main.c0c6e54d.js.map",
+    "main.6328bee1.css.map": "/henhacks/static/css/main.6328bee1.css.map",
+    "main.44afde69.js.map": "/henhacks/static/js/main.44afde69.js.map",
     "483.d16cccdc.chunk.js.map": "/henhacks/static/js/483.d16cccdc.chunk.js.map",
     "787.8b42024e.chunk.js.map": "/henhacks/static/js/787.8b42024e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.c0c6e54d.js"
+    "static/css/main.6328bee1.css",
+    "static/js/main.44afde69.js"
   ]
 }
