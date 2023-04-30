@@ -1,5 +1,5 @@
 import { Text, Button, Center, Box } from '@chakra-ui/react';
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 
 interface Post {
     id: number;
