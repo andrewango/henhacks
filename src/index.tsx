@@ -46,7 +46,7 @@ root.render(
     <React.StrictMode>
         <HashRouter>
             <ChakraProvider theme={theme}>
-                    <App />
+                <App />
             </ChakraProvider>
         </HashRouter>
     </React.StrictMode>

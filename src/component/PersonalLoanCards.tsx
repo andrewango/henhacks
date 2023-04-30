@@ -8,7 +8,16 @@ import {
     CardFooter,
     Button,
     VStack,
-    Link
+    Link,
+    Center,
+    Divider,
+    Accordion,
+    AccordionItem,
+    AccordionButton,
+    AccordionIcon,
+    AccordionPanel,
+    HStack,
+    Box
 } from "@chakra-ui/react";
 import { PersonalLoanCardProps } from "./PersonalLoanCardProps";
 import BankRate from "../personal-loan-logos/BankRate.webp";
@@ -119,70 +128,138 @@ export default function PersonalLoanCards() {
     return (
         <>
             <div style={{ padding: 15 }}>
-                <VStack direction="row" spacing={5} align="stretch">
-                    {personalLoans.map((loan: PersonalLoanCardProps) => (
-                        <Card
-                            key={loan.title}
-                            direction={{ base: "column", sm: "row" }}
-                            overflow="hidden"
-                            variant="outline"
-                            boxShadow="md"
-                            transition="box-shadow 0.2s"
-                            _hover={{ boxShadow: "xl" }}
-                        >
-                            <Link href={loan.link}>
-                                <Image
-                                    objectFit="cover"
-                                    maxW={{ base: "100%", sm: "350px" }}
-                                    src={loan.img}
-                                    alt={loan.title}
-                                />
-                            </Link>
-                            <CardBody>
-                                <Heading size="md">{loan.title}</Heading>
+                <Center>
+                    <VStack direction="row" spacing={5}>
+                        {personalLoans.map((loan) => (
+                            <VStack>
+                                <Card
+                                    key={loan.title}
+                                    boxShadow="md"
+                                    direction={{ base: "column", sm: "row" }}
+                                    overflow="hidden"
+                                    transition="box-shadow 0.2s"
+                                    variant="outline"
+                                    width="850px"
+                                    height="300px"
+                                    _hover={{ boxShadow: "2xl" }}
+                                    align="center"
+                                >
+                                    <Link href={loan.link}>
+                                        <Image
+                                            alt={loan.title}
+                                            maxW={{ base: "100%", sm: "350px" }}
+                                            objectFit="cover"
+                                            src={loan.img}
+                                            width="300px"
+                                            maxH="300px"
+                                        />
+                                    </Link>
 
-                                <Text py="2">{loan.apr}</Text>
-                                <Text py="2">{loan.loanTerm}</Text>
-                                <Text py="2">{loan.maxLoan}</Text>
-                                <Text py="2">{loan.minCreditScore}</Text>
-                            </CardBody>
+                                    <Divider orientation="vertical" />
 
-                            <CardFooter>
-                                <Link href={loan.link}>
-                                    <Button
-                                        as="button"
-                                        id="check-rates-link"
-                                        height="40px"
-                                        lineHeight="2.1"
-                                        transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
-                                        border="2px"
-                                        borderRadius="50px"
-                                        fontSize="20px"
-                                        fontWeight="semibold"
-                                        bg="blue.500"
-                                        borderColor="blue.600"
-                                        color="white"
-                                        _hover={{
-                                            bg: "blue.600",
-                                            color: "white"
-                                        }}
-                                        _active={{
-                                            bg: "blue.300",
-                                            transform: "scale(0.90)",
-                                            borderColor: "blue.200"
-                                        }}
-                                        _focus={{
-                                            boxShadow:
-                                                "0 0 2px 2px rgba(0, 200, 255, .50), 0 1px 1px rgba(0, 0, 0, .15)"
-                                        }}
-                                    >
-                                        Learn More
-                                    </Button>
-                                </Link>
-                            </CardFooter>
-                        </Card>
-                    ))}
-                </VStack>
+                                    <CardBody alignItems="center" py={6} px={8}>
+                                        <Heading size="lg">
+                                            {loan.title}
+                                        </Heading>
+                                        <Divider
+                                            my={4}
+                                            borderColor="gray.300"
+                                        />
+                                        <Text py={2}>
+                                            <b>APR: </b>
+                                            {loan.apr}
+                                        </Text>
+                                        <Text py={2}>
+                                            <b>Loan Term: </b>
+                                            {loan.loanTerm}
+                                        </Text>
+                                        <Text py={2}>
+                                            <b>Maximum Loan: </b>${loan.maxLoan}
+                                            k
+                                        </Text>
+                                        <Text py={2}>
+                                            <b>Minimum Credit Score: </b>
+                                            {loan.minCreditScore}
+                                        </Text>
+                                    </CardBody>
+                                    <Divider orientation="vertical" />
+                                    <CardFooter>
+                                        <Link href={loan.link}>
+                                            <Button
+                                                as="button"
+                                                bg="blue.500"
+                                                borderColor="blue.600"
+                                                borderRadius="50px"
+                                                border="2px"
+                                                color="white"
+                                                fontSize="20px"
+                                                fontWeight="semibold"
+                                                height="40px"
+                                                lineHeight="2.1"
+                                                transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
+                                                _active={{
+                                                    bg: "blue.300",
+                                                    borderColor: "blue.200",
+                                                    transform: "scale(0.90)"
+                                                }}
+                                                _focus={{
+                                                    boxShadow:
+                                                        "0 0 2px 2px rgba(0, 200, 255, .50), 0 1px 1px rgba(0, 0, 0, .15)"
+                                                }}
+                                                _hover={{
+                                                    bg: "blue.600",
+                                                    color: "white"
+                                                }}
+                                            >
+                                                View Rates
+                                            </Button>
+                                        </Link>
+                                    </CardFooter>
+                                </Card>
+                                <Accordion
+                                    allowToggle
+                                    width="850px"
+                                    color="white"
+                                >
+                                    <AccordionItem>
+                                        <h2>
+                                            <AccordionButton>
+                                                <p>
+                                                    Learn more about{" "}
+                                                    <b>{loan.title}</b>
+                                                </p>
+                                                <AccordionIcon />
+                                            </AccordionButton>
+                                        </h2>
+                                        <AccordionPanel pb={4}>
+                                            <HStack
+                                                maxW="850px"
+                                                textAlign="center"
+                                            >
+                                                <Box flex={1}>
+                                                    <Text fontWeight="bold">
+                                                        Pros
+                                                    </Text>
+                                                    <Text>1</Text>
+                                                    <Text>2</Text>
+                                                    <Text>3</Text>
+                                                </Box>
+                                                <Box flex={1}>
+                                                    <Text fontWeight="bold">
+                                                        Cons
+                                                    </Text>
+                                                    <Text>1</Text>
+                                                    <Text>2</Text>
+                                                    <Text>3</Text>
+                                                </Box>
+                                            </HStack>
+                                        </AccordionPanel>
+                                    </AccordionItem>
+                                </Accordion>
+                            </VStack>
+                        ))}
+                    </VStack>
+                </Center>
             </div>
         </>
     );
