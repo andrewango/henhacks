@@ -28,7 +28,7 @@ export default function NavBar() {
                     borderRadius="md"
                     mr={4}
                 >
-          Home
+          Personal Loans
                 </Box>
             </Link>
             <Link to="/Strategy">

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Image, Text, Card, CardBody, Stack, Button, Center, VStack, HStack } from "@chakra-ui/react";
+import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import Slide1 from "../slides/Step 1.png";
 import Slide2 from "../slides/Step 2.png";
 import Slide3 from "../slides/Step 3.png";
@@ -49,7 +50,7 @@ export default function SlideShow(): JSX.Element {
             <VStack>
             {cardData.map((card, index) => (
                 cardIndex === index && (
-                    <Card variant="elevated" textAlign="center" maxW='lg'>
+                    <Card variant="elevated" textAlign="center" size='md'>
                         <CardBody>
                             <Image
                             src={card.img}
@@ -64,8 +65,8 @@ export default function SlideShow(): JSX.Element {
                     </Card>
                 )
             ))}
-            <HStack>
-                { cardIndex === cardData.length - 1 ? <Button onClick={handleNextClick}>Restart</Button> : cardIndex === 0 ? <><Button onClick={handleNextClick}>Next</Button></> : <><Button onClick={handlePreviousClick}>Previous</Button><Button onClick={handleNextClick}>Next</Button></>}
+            <HStack spacing={5}>
+                { cardIndex === cardData.length - 1 ? <Button onClick={handleNextClick}>Restart</Button> : cardIndex === 0 ? <><Button onClick={handleNextClick} rightIcon={<ChevronRightIcon />}>Next</Button></> : <><Button onClick={handlePreviousClick} leftIcon={<ChevronLeftIcon />}>Previous</Button><Button onClick={handleNextClick} rightIcon={<ChevronRightIcon />}>Next</Button></>}
             </HStack>
             </VStack>
             </Center>
