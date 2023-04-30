@@ -1,8 +1,8 @@
 import React from "react";
+//Routing
 import Landing from "./pages/Landing";
 import Strategy from "./pages/Strategy";
 import Forum from "./pages/Forum";
-//Routing
 import { Routes, Route } from "react-router-dom";
 
 // 3. Pass the `theme` prop to the `ChakraProvider`
