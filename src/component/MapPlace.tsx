@@ -13,7 +13,7 @@ export default function MapPlace() {
           zoom: 10,
         });
       });
-    }, []);
+    }, [viewport]);
     return (
       <div>
         {viewport.latitude && viewport.longitude && (
