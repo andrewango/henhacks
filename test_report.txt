@@ -292,7 +292,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (305 ms)
+  ✕ renders learn react link (216 ms)
 
   ● renders learn react link
 
@@ -331,32 +331,34 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
-------------------------|---------|----------|---------|---------|-------------------
-File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-------------------------|---------|----------|---------|---------|-------------------
-All files               |    5.43 |        0 |    6.97 |    5.43 |                   
- src                    |    9.25 |        0 |   14.28 |    9.25 |                   
-  App.tsx               |     100 |      100 |     100 |     100 |                   
-  ColorModeSwitcher.tsx |       0 |      100 |       0 |       0 | 12-17             
-  Logo.tsx              |       0 |        0 |       0 |       0 | 11-23             
-  serviceWorker.ts      |       0 |        0 |       0 |       0 | 13-143            
-  test-utils.tsx        |     100 |      100 |     100 |     100 |                   
- src/component          |       0 |        0 |       0 |       0 |                   
-  BankCards.tsx         |       0 |      100 |       0 |       0 | 22-86             
-  MapPlace.tsx          |       0 |        0 |       0 |       0 | 6-17              
-  NavBar.tsx            |       0 |      100 |       0 |       0 | 6                 
-  SlideShow.tsx         |       0 |        0 |       0 |       0 | 18-52             
-  Textbox.tsx           |       0 |        0 |       0 |       0 | 11-47             
- src/pages              |       0 |      100 |       0 |       0 |                   
-  FAQ.tsx               |       0 |      100 |       0 |       0 | 6                 
-  Forum.tsx             |       0 |      100 |       0 |       0 | 7                 
-  Landing.tsx           |       0 |      100 |       0 |       0 | 6                 
-  QnA.tsx               |       0 |      100 |       0 |       0 | 7                 
-  Strategy.tsx          |       0 |      100 |       0 |       0 | 8                 
-  TaxRelief.tsx         |       0 |      100 |       0 |       0 | 7                 
-------------------------|---------|----------|---------|---------|-------------------
+----------------------------|---------|----------|---------|---------|-------------------
+File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------------------------|---------|----------|---------|---------|-------------------
+All files                   |    5.26 |        0 |    6.66 |    5.26 |                   
+ src                        |    9.25 |        0 |   14.28 |    9.25 |                   
+  App.tsx                   |     100 |      100 |     100 |     100 |                   
+  ColorModeSwitcher.tsx     |       0 |      100 |       0 |       0 | 12-17             
+  Logo.tsx                  |       0 |        0 |       0 |       0 | 11-23             
+  serviceWorker.ts          |       0 |        0 |       0 |       0 | 13-143            
+  test-utils.tsx            |     100 |      100 |     100 |     100 |                   
+ src/component              |       0 |        0 |       0 |       0 |                   
+  BankCards.tsx             |       0 |      100 |       0 |       0 | 23-87             
+  MapPlace.tsx              |       0 |        0 |       0 |       0 | 5-22              
+  NavBar.tsx                |       0 |      100 |       0 |       0 | 6                 
+  PersonalLoanCardProps.tsx |       0 |        0 |       0 |       0 |                   
+  PersonalLoanCards.tsx     |       0 |      100 |       0 |       0 | 26-124            
+  SlideShow.tsx             |       0 |        0 |       0 |       0 | 32-100            
+  Textbox.tsx               |       0 |        0 |       0 |       0 | 11-47             
+ src/pages                  |       0 |      100 |       0 |       0 |                   
+  Banking.tsx               |       0 |      100 |       0 |       0 | 7                 
+  FAQ.tsx                   |       0 |      100 |       0 |       0 | 6                 
+  Forum.tsx                 |       0 |      100 |       0 |       0 | 7                 
+  Landing.tsx               |       0 |      100 |       0 |       0 | 7                 
+  QnA.tsx                   |       0 |      100 |       0 |       0 | 7                 
+  Strategy.tsx              |       0 |      100 |       0 |       0 | 8                 
+----------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        4.944 s
+Time:        3.593 s
 Ran all test suites.
