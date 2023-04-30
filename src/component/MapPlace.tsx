@@ -24,7 +24,8 @@ export default function MapPlace() {
             {viewport.latitude && viewport.longitude && (
                 <div>
                     <Map
-                        mapboxAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+                        //mapboxAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+                        mapboxAccessToken="pk.eyJ1IjoiYW5kcmV3YW5nbyIsImEiOiJjbGgycXFxMjEwZmo3M2xuNG9nOWZ3dzFoIn0.bIABgr8KvAkCs3SWBUnvcQ"
                         initialViewState={viewport}
                         mapStyle="mapbox://styles/mapbox/streets-v11"
                     >
