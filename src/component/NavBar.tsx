@@ -3,7 +3,6 @@ import { Box } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 export default function NavBar() {
-
     return (
         <Box
             as="nav"
@@ -13,7 +12,7 @@ export default function NavBar() {
             top={0}
             zIndex={99999999}
             py={4}
-            bg="blue.500"
+            bgGradient="linear(to-b, blue.600, blue.400)"
             data-testid="bar"
         >
             <Link to="/">
@@ -25,11 +24,11 @@ export default function NavBar() {
                     px={4}
                     py={2}
                     transition="background-color 0.3s ease"
-                    _hover={{ bgColor: "blue.700", color: "white" }}
+                    _hover={{ bgGradient: 'linear(to-b, blue.700, blue.900)', color: "white" }}
                     borderRadius="md"
                     mr={4}
                 >
-                    Home
+          Personal Loans
                 </Box>
             </Link>
             <Link to="/Strategy">
@@ -41,10 +40,10 @@ export default function NavBar() {
                     px={4}
                     py={2}
                     transition="background-color 0.3s ease"
-                    _hover={{ bgColor: "blue.700", color: "white" }}
+                    _hover={{ bgGradient: 'linear(to-b, blue.700, blue.900)', color: "white" }}
                     borderRadius="md"
                 >
-                    Strategy
+          Strategy
                 </Box>
             </Link>
             <Link to="/Forum">
@@ -56,10 +55,10 @@ export default function NavBar() {
                     px={4}
                     py={2}
                     transition="background-color 0.3s ease"
-                    _hover={{ bgColor: "blue.700", color: "white" }}
+                    _hover={{ bgGradient: 'linear(to-b, blue.700, blue.900)', color: "white" }}
                     borderRadius="md"
                 >
-                    Forum
+          Forum
                 </Box>
             </Link>
         </Box>
